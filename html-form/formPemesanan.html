@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formpemesanan</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        p {
+            font-family: courier;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 470px;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>karawangbooking.com </h1>
+    </center>
+    <ul>
+        <li><a href="formPemesanan.html">Pesan Tiket</a></li>
+    </ul>
+    <h2>Form Pemesanan</h2>
+    <form action="input_pesanan.php" method="GET" target="_blank">
+        <pre>
+Nama Lengkap         : <input type="text" name="nama_lengkap" required>
+
+Nomor Identitas      : <input type="text" name="nama_lengkap" required> 
+       
+No. HP               : <input type="text" name="nama_lengkap" required>
+
+<label for="tempat">Pilih Tempat         :</label> <select name="tempat" id="tempat">
+  <option value="Curug_cigentis">Curug cigentis</option>
+  <option value="Kampung_turis">Kampung turis</option>
+  <option value="Waterpark">Waterpark</option>
+  </select>
+
+Tanggal Kunjungan    : <input type="date" name="tgl_kunjung">
+
+Pengunjung Dewasa    : <input type="number" name="jmlh_dewasa" min="1">
+
+Pengunjung Anak-Anak : <input type="number" name="jumlh_anak" min="1">
+<small>Usia dibawah 12 tahun</small>
+<br> Harga Tiket        : <input type="text" id="dengan-rupiah"/>
+<br> Harga Tiket        : <input type="text" id="dengan-rupiah"/>
+     
+  <input type="checkbox" id="catatan" name="persetujuan"><label for="catatan">Saya dan/atau rombongan telah membaca, memahami dan
+  setuju berdasarkan syarat dan ketentuan yang telah ditetapkan</label>
+  </pre>
+        <br>
+
+
+        <button type="button">Hitung Total Bayar</button>
+        <button type="button">Pesan Tiket</button>
+        <button type="button">Cancel</button>
+        <!-- <input type="submit" name="daftar"> -->
+        <!-- <input type="reset" name="hapus_data"> -->
+    </form>
+    <script>
+    </script>
+</body>
+
+</html>

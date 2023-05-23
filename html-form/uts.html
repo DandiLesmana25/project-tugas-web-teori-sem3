@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTSWEBteori</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        p {
+            font-family: courier;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 470px;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>UTS Pemrograman Web 2022/2023</h2>
+    <form action="uts.php" method="GET" target="_blank">
+        <pre>
+Nama        : <input type="text" name="nama" 
+
+NIM         : <input type="text" name="nim"> >
+       
+Presensi    : <input type="number" name="presensi">
+       
+Tugas       : <input type="number" name="tugas"> 
+       
+UTS         : <input type="number" name="uts" >
+
+UAS         : <input type="number" name="uas" >
+
+<input type="submit" value="nilai_akhir">
+
+        <!-- <input type="submit" name="daftar"> -->
+        <!-- <input type="reset" name="hapus_data"> -->
+    </form>
+
+</body>
+
+</html>
